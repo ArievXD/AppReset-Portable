@@ -1,0 +1,130 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=System.Runtime">
+    <!-- UI text (Bahasa Indonesia). Keep the keys identical in every Strings.*.xaml file. -->
+    <sys:String x:Key="App.Title">AppReset</sys:String>
+    <sys:String x:Key="App.Tagline">Kembalikan aplikasi Windows seperti saat pertama kali dibuka. Programnya tetap terpasang.</sys:String>
+
+    <sys:String x:Key="Settings.Language">Bahasa</sys:String>
+    <sys:String x:Key="Settings.Theme">Tema</sys:String>
+
+    <sys:String x:Key="Lang.English">English</sys:String>
+    <sys:String x:Key="Lang.Indonesian">Bahasa Indonesia</sys:String>
+
+    <sys:String x:Key="Theme.System">Ikuti Windows</sys:String>
+    <sys:String x:Key="Theme.Light">Terang</sys:String>
+    <sys:String x:Key="Theme.Dark">Gelap</sys:String>
+
+    <sys:String x:Key="Tab.Reset">Reset aplikasi</sys:String>
+    <sys:String x:Key="Tab.Backups">Cadangan</sys:String>
+
+    <sys:String x:Key="Apps.Header">Aplikasi terpasang</sys:String>
+    <sys:String x:Key="Apps.Search">Cari nama atau penerbit</sys:String>
+    <sys:String x:Key="Apps.Count">{0} aplikasi ditampilkan</sys:String>
+    <sys:String x:Key="Apps.Loading">Membaca daftar aplikasi terpasang…</sys:String>
+    <sys:String x:Key="Apps.Error">Daftar aplikasi terpasang tidak bisa dibaca. {0}</sys:String>
+    <sys:String x:Key="Apps.Retry">Coba lagi</sys:String>
+    <sys:String x:Key="Apps.NoMatch">Tidak ada aplikasi yang cocok dengan “{0}”.</sys:String>
+    <sys:String x:Key="Apps.Reload">Muat ulang daftar</sys:String>
+
+    <sys:String x:Key="Empty.Title">Pilih aplikasi di sebelah kiri</sys:String>
+    <sys:String x:Key="Empty.Body">AppReset mencari pengaturan dan data yang disimpan aplikasi itu di folder pengguna dan registry Windows. Kamu yang memilih apa yang dihapus, cadangan disimpan lebih dulu, lalu aplikasi terbuka seperti hari pertama.</sys:String>
+    <sys:String x:Key="Empty.Limits">Hanya lokasi data standar Windows yang diperiksa. Akun, lisensi, dan data yang tersimpan online atau di folder lain tidak disentuh.</sys:String>
+    <sys:String x:Key="Empty.Store">Aplikasi dari Microsoft Store sudah punya fitur ini: Settings, Apps, Installed apps, Advanced options, Reset.</sys:String>
+
+    <sys:String x:Key="Detail.Version">versi {0}</sys:String>
+    <sys:String x:Key="Detail.InstalledIn">Terpasang di</sys:String>
+
+    <sys:String x:Key="Running.Message">{0} sedang terbuka ({1}). Tutup dulu, kalau tidak file yang sedang dipakai tidak bisa dihapus.</sys:String>
+    <sys:String x:Key="Running.Check">Periksa lagi</sys:String>
+
+    <sys:String x:Key="Admin.Message">{0} item yang ditemukan dipakai bersama oleh semua pengguna di PC ini. Mengubahnya butuh hak administrator.</sys:String>
+    <sys:String x:Key="Admin.Restart">Buka ulang sebagai administrator</sys:String>
+
+    <sys:String x:Key="Scan.Working">Mencari di AppData, ProgramData, dan registry…</sys:String>
+    <sys:String x:Key="Scan.Error">Pemindaian berhenti. {0}</sys:String>
+    <sys:String x:Key="Scan.Again">Pindai ulang</sys:String>
+    <sys:String x:Key="Scan.NothingTitle">Tidak ada data untuk {0}</sys:String>
+    <sys:String x:Key="Scan.NothingBody">Tidak ada folder atau kunci registry di lokasi standar yang cocok dengan aplikasi ini. Mungkin datanya disimpan di tempat lain, atau aplikasi belum menyimpan apa pun.</sys:String>
+    <sys:String x:Key="Scan.FoundIntro">Item yang dicentang akan dihapus. Yang cocok persis sudah dicentang. Periksa yang lain sebelum mencentangnya.</sys:String>
+
+    <sys:String x:Key="Location.RoamingAppData">Pengaturan di AppData\Roaming</sys:String>
+    <sys:String x:Key="Location.LocalAppData">Data dan cache di AppData\Local</sys:String>
+    <sys:String x:Key="Location.LocalLowAppData">Data di AppData\LocalLow</sys:String>
+    <sys:String x:Key="Location.ProgramData">Data bersama di ProgramData</sys:String>
+    <sys:String x:Key="Location.UserRegistry">Pengaturan registry milikmu</sys:String>
+    <sys:String x:Key="Location.MachineRegistry">Pengaturan registry untuk seluruh PC</sys:String>
+
+    <sys:String x:Key="Strength.Exact">Cocok persis</sys:String>
+    <sys:String x:Key="Strength.Likely">Kemungkinan besar cocok</sys:String>
+    <sys:String x:Key="Strength.Possible">Mungkin cocok</sys:String>
+
+    <sys:String x:Key="Reason.NameExact">Namanya sama dengan nama aplikasi</sys:String>
+    <sys:String x:Key="Reason.ExeName">Namanya sama dengan nama file program. Pastikan ini milik aplikasi ini</sys:String>
+    <sys:String x:Key="Reason.NameSimilar">Namanya mirip nama aplikasi. Bisa jadi milik aplikasi lain yang terkait</sys:String>
+    <sys:String x:Key="Reason.NameContains">Namanya mengandung nama aplikasi. Periksa sebelum menghapus</sys:String>
+    <sys:String x:Key="Reason.InsidePublisherFolder">Di dalam folder penerbit, dinamai sesuai aplikasi</sys:String>
+    <sys:String x:Key="Reason.PublisherFolder">Seluruh folder penerbit. Tidak ada aplikasi lain dari penerbit ini yang terpasang</sys:String>
+
+    <sys:String x:Key="Warn.MachineWide">Dipakai bersama oleh semua pengguna di PC ini.</sys:String>
+    <sys:String x:Key="Warn.MachineRegistry">Biasanya ditulis oleh installer. Menghapusnya bisa membuat aplikasi gagal terbuka.</sys:String>
+
+    <sys:String x:Key="Item.NeedsAdmin">Butuh hak administrator</sys:String>
+    <sys:String x:Key="Item.Open">Buka</sys:String>
+    <sys:String x:Key="Item.OpenName">Buka {0} di File Explorer</sys:String>
+    <sys:String x:Key="Item.SizeUnknown">ukuran tidak diketahui</sys:String>
+
+    <sys:String x:Key="Footer.Backup">Simpan cadangan dulu (disarankan)</sys:String>
+    <sys:String x:Key="Footer.Selected">{0} dipilih, {1}</sys:String>
+    <sys:String x:Key="Footer.SelectedNone">Belum ada yang dipilih</sys:String>
+    <sys:String x:Key="Footer.Reset">Reset {0}</sys:String>
+
+    <sys:String x:Key="Progress.Step">Item {0} dari {1}</sys:String>
+
+    <sys:String x:Key="Confirm.Title">Reset {0}?</sys:String>
+    <sys:String x:Key="Confirm.WithBackup">{0} item ({1}) akan dihapus. Cadangan disimpan lebih dulu, jadi kamu bisa membatalkannya dari tab Cadangan.</sys:String>
+    <sys:String x:Key="Confirm.NoBackup">{0} item ({1}) akan dihapus tanpa cadangan. Ini tidak bisa dibatalkan.</sys:String>
+    <sys:String x:Key="Confirm.Continue">Lanjutkan?</sys:String>
+
+    <sys:String x:Key="Result.ResetTitle">Reset selesai</sys:String>
+    <sys:String x:Key="Result.ResetErrorTitle">Reset berhenti</sys:String>
+    <sys:String x:Key="Result.RestoreTitle">Pemulihan selesai</sys:String>
+    <sys:String x:Key="Result.RestoreErrorTitle">Pemulihan berhenti</sys:String>
+    <sys:String x:Key="Result.Removed">{0} dari {1} item dihapus.</sys:String>
+    <sys:String x:Key="Result.BackupSaved">Cadangan sudah disimpan.</sys:String>
+    <sys:String x:Key="Result.NoBackup">Tidak ada cadangan yang dibuat.</sys:String>
+    <sys:String x:Key="Result.Restored">{0} dari {1} item milik {2} dikembalikan.</sys:String>
+    <sys:String x:Key="Result.NextStep">Buka {0} untuk memastikan aplikasinya terbuka seperti baru dipasang.</sys:String>
+    <sys:String x:Key="Result.NotRemoved">Tidak terhapus</sys:String>
+    <sys:String x:Key="Result.NotRestored">Tidak dikembalikan</sys:String>
+    <sys:String x:Key="Result.OpenBackup">Buka folder cadangan</sys:String>
+    <sys:String x:Key="Result.Unexpected">Terjadi kesalahan: {0}</sys:String>
+
+    <sys:String x:Key="Failure.Blocked">Ditolak oleh aturan keamanan AppReset.</sys:String>
+    <sys:String x:Key="Failure.InUse">Ada file yang sedang dipakai program lain.</sys:String>
+    <sys:String x:Key="Failure.AccessDenied">Windows menolak akses.</sys:String>
+    <sys:String x:Key="Failure.NeedsAdmin">Butuh hak administrator.</sys:String>
+    <sys:String x:Key="Failure.ContainsLink">Berisi tautan ke folder lain, jadi dibiarkan.</sys:String>
+    <sys:String x:Key="Failure.MissingFromBackup">Salinan yang disimpan tidak ada di cadangan.</sys:String>
+    <sys:String x:Key="Failure.Other">Terjadi kesalahan.</sys:String>
+    <sys:String x:Key="Failure.LeftInPlace">Item ini gagal dicadangkan, jadi tidak dihapus.</sys:String>
+
+    <sys:String x:Key="Backups.Intro">Setiap reset menyimpan salinan di sini lebih dulu. Memulihkan cadangan mengembalikan data aplikasi itu persis seperti sebelum direset.</sys:String>
+    <sys:String x:Key="Backups.Folder">Disimpan di</sys:String>
+    <sys:String x:Key="Backups.OpenFolder">Buka folder cadangan</sys:String>
+    <sys:String x:Key="Backups.Refresh">Muat ulang</sys:String>
+    <sys:String x:Key="Backups.Loading">Membaca cadangan…</sys:String>
+    <sys:String x:Key="Backups.Error">Cadangan tidak bisa dibaca. {0}</sys:String>
+    <sys:String x:Key="Backups.EmptyTitle">Belum ada cadangan</sys:String>
+    <sys:String x:Key="Backups.EmptyBody">Cadangan muncul di sini setiap kali kamu mereset aplikasi dengan “Simpan cadangan dulu” dicentang.</sys:String>
+    <sys:String x:Key="Backups.Meta">{0}, {1} item, {2}</sys:String>
+    <sys:String x:Key="Backups.NeedsAdmin">Beberapa item berlaku untuk seluruh PC dan butuh hak administrator untuk dipulihkan.</sys:String>
+    <sys:String x:Key="Backups.Restore">Pulihkan</sys:String>
+    <sys:String x:Key="Backups.OpenOne">Buka</sys:String>
+    <sys:String x:Key="Backups.Delete">Hapus</sys:String>
+    <sys:String x:Key="Backups.RestoreTitle">Pulihkan {0}?</sys:String>
+    <sys:String x:Key="Backups.RestoreConfirm">Data {0} saat ini akan diganti dengan salinan yang disimpan pada {1}. Tutup {0} sebelum melanjutkan.</sys:String>
+    <sys:String x:Key="Backups.DeleteTitle">Hapus cadangan {0}?</sys:String>
+    <sys:String x:Key="Backups.DeleteConfirm">Cadangan {0} dari {1} akan dihapus permanen dan tidak bisa dipulihkan lagi.</sys:String>
+    <sys:String x:Key="Backups.DeleteFailed">Cadangan tidak bisa dihapus. {0}</sys:String>
+</ResourceDictionary>

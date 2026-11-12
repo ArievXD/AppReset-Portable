@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>AppReset</AssemblyName>
+    <RootNamespace>AppReset.App</RootNamespace>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <Version>0.1.0</Version>
+    <Product>AppReset</Product>
+    <Description>Reset a Windows app's settings and data to a first-run state, with a backup.</Description>
+    <!-- Lets the project build on Linux and macOS CI too (it only runs on Windows). -->
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <!-- WPF0001: Application.ThemeMode (Windows 11 Fluent look, light and dark) is marked experimental. -->
+    <NoWarn>$(NoWarn);WPF0001</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AppReset.Core\AppReset.Core.csproj" />
+  </ItemGroup>
+
+</Project>
