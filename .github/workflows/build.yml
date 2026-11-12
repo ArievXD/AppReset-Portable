@@ -1,0 +1,46 @@
+name: Build
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "10.0.x"
+
+      - name: Run tests
+        run: dotnet test tests/AppReset.Tests/AppReset.Tests.csproj -c Release
+
+      - name: Build AppReset.exe
+        run: >
+          dotnet publish src/AppReset.App/AppReset.App.csproj
+          -c Release -r win-x64 --self-contained true
+          -p:PublishSingleFile=true
+          -p:IncludeNativeLibrariesForSelfExtract=true
+          -p:EnableCompressionInSingleFile=true
+          -o publish
+
+      - name: Upload build
+        uses: actions/upload-artifact@v4
+        with:
+          name: AppReset-win-x64
+          path: publish/AppReset.exe
+
+      # Pushing a tag such as v0.1.0 publishes a GitHub release with the exe attached.
+      - name: Publish release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: publish/AppReset.exe
+          generate_release_notes: true
