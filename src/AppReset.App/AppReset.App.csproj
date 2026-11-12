@@ -9,6 +9,8 @@
     <AssemblyName>AppReset</AssemblyName>
     <RootNamespace>AppReset.App</RootNamespace>
     <ApplicationManifest>app.manifest</ApplicationManifest>
+    <!-- The icon Explorer and the taskbar show for AppReset.exe. Source drawing: Assets/AppReset.svg -->
+    <ApplicationIcon>Assets\AppReset.ico</ApplicationIcon>
     <Version>0.1.0</Version>
     <Product>AppReset</Product>
     <Description>Reset a Windows app's settings and data to a first-run state, with a backup.</Description>
@@ -17,6 +19,11 @@
     <!-- WPF0001: Application.ThemeMode (Windows 11 Fluent look, light and dark) is marked experimental. -->
     <NoWarn>$(NoWarn);WPF0001</NoWarn>
   </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Also embedded so the window title bar can use it. -->
+    <Resource Include="Assets\AppReset.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\AppReset.Core\AppReset.Core.csproj" />
